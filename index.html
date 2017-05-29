@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="#" class="navbar__item navbar__item_blue">Личный кабинет</a>
+            <a href="#" class="navbar__item navbar__item_green">Раздел 1</a>
+            <a href="#" class="navbar__item navbar__item_deepskyblue">Раздел 2</a>
+            <a href="#" class="navbar__item navbar__item_orangered">Раздел 3</a>
+            <a href="#" class="navbar__item navbar__item_black">Раздел 4</a>
+            <a href="#" class="navbar__item navbar__item_red">Раздел 5</a>
+        </nav>
+        <aside class="left-sidebar">&#9728; TuTuRu - крупнейший сервис поиска, бронирования и покупки
+            авиабилетов и ж/д билетов.
+            <br/>
+            <br/>
+            <br/>
+            Наша цель проста - делать наших клиентов счастливыми, а их путешествия незабываемыми.
+            Любое путешествие начинается с поиска подходящих билетов и бронирования гостиниц.
+            А мы делаем это качественно, обеспечивая самую лучшую поддержку благодаря
+            собственному контакт-центру.
+        </aside>
+        <main class="main">
+            <div class="header">
+                <div class="header__text">Заполните форму</div>
+                <ul class="header__progress-bar">
+                    <li class="progress-bar__step progress-bar__step_begin ">1</li>
+                    <li class="progress-bar__step progress-bar__step_completed">2</li>
+                    <li class="progress-bar__step progress-bar__step_current">3</li>
+                    <li class="progress-bar__step">4</li>
+                    <li class="progress-bar__step progress-bar__step_end">5</li>
+                </ul>
+            </div>
+            <h1 id="general-info"><span>Общая информация</span></h1>
+            
+            <form id="form-personal-info" action="index.html">
+                <table class="form-personal-info__table">
+                    <tr class="table__raw">
+                        <td>Фамилия</td>
+                        <td>Имя</td>
+                        <td>Отчество</td>
+                    </tr>
+                    <tr class="table__raw">
+                        <td><input id="input-surname" type="text" name="surname"></td>
+                        <td><input id="input-name" type="text" name="name"></td>
+                        <td><input id="input-patronymic" type="text" name="patronymic"></td>
+                    </tr>
+                    <tr class="table__raw">
+                        <td colspan="3"></td>
+                    </tr>
+                    <tr class="table__raw">
+                        <td>Меняли фамилию?</td>
+                        <td>Пол</td>
+                        <td>Семейное положение</td>
+                    </tr>
+                    <tr class="table__raw">
+                        <td>
+                            <input type="radio" id="yes-last-name" name="radio-last-name" value="yes">
+                                <label id="lbl-yes-radio" for="yes-last-name">Да</label>
+                            <input type="radio" id="no-last-name" name="radio-last-name" checked value="no">
+                                <label id="lbl-no-radio" for="no-last-name">Нет</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="radio-male-female" id="male" value="male" checked>
+                            <label for="male" id="lbl-radio-male">Муж</label>
+                            <input type="radio" name="radio-male-female" id="female" value="female">
+                            <label for="female" id="lbl-radio-female">Жен</label>
+                        </td>
+                        <td><select id="marital-status"><option>Женат/Замужем</option></select></td>
+                    </tr>
+                    <tr class="table__raw">
+                        <td colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td>Гражданство</td>
+                        <td>Дата рождения</td>
+                        <td></td>
+                    </tr>
+                    <tr class="table__raw">
+                        <td><select id="citizenship"><option>Российская Федерация</option></select></td>
+                        <td>
+                            <select id="select-day"><option>11</option></select>
+                            <select id="select-month"><option>июня</option></select>
+                            <select id="select-year"><option>1970</option></select>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="table__raw">
+                        <td colspan="3"></td>
+                    </tr>
+                    <tr class="table__raw">
+                        <td colspan="3">Место рождения</td>
+                    </tr>
+                    <tr class="table__raw">
+                        <td colspan="3"><input id="input-bornplace" type="text" name="bornplace"></td>
+                    </tr>
+                    <tr class="table__raw">
+                        <td class="sub-text" colspan="3">Например, Россия, Комсомольск-на-Амуре</td>
+                    </tr>
+                    <tr class="table__raw table__raw_last-row">
+                        <td class="cell-backward-btn"><a href="index.html" class="btn_style">&#10229;&nbsp;Назад</a></td>
+                        <td class=""></td>
+                        <td class=" cell-forward-btn"><button type="submit" class="btn_style btn_style-forward">Далее&nbsp;&#10230;</button></td>
+                    </tr>
+                </table>
+            </form>
+        </main>
+    </div>
+
+</body>
+</html>
